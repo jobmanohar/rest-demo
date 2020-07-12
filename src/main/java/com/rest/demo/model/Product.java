@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "products")
+@Table(name = "PRODUCTS")
 public class Product {
 	
 	
@@ -22,9 +22,7 @@ public class Product {
 		
 	}
 	
-	public Product(Long id, int quantity, Long price, String name, String category) {
-		super();
-		this.id = id;
+	public Product(int quantity, Long price, String name, String category) {
 		this.quantity = quantity;
 		this.price = price;
 		this.name = name;
