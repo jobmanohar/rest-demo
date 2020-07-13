@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "c780894d-ae31-4d7a-a416-a17a3893728d",
+		"name": "rest-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8445/api/v1/deleteItem/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n\t\"quantity\": \"5\",\r\n    \"price\": \"20000\",\r\n    \"name\": \"iphone 11\",\r\n    \"category\": \"Phone\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8445/api/v1/deleteItem/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8445",
+					"path": [
+						"api",
+						"v1",
+						"deleteItem",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8445/api/v1/updateItem/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n\t\"quantity\": \"5\",\r\n    \"price\": \"20000\",\r\n    \"name\": \"iphone 11\",\r\n    \"category\": \"Phone\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8445/api/v1/updateItem/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8445",
+					"path": [
+						"api",
+						"v1",
+						"updateItem",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8445/api/v1/addItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"quantity\": \"2\",\r\n    \"price\": \"20000\",\r\n    \"name\": \"iphone 11\",\r\n    \"category\": \"Phone\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8445/api/v1/addItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8445",
+					"path": [
+						"api",
+						"v1",
+						"addItem"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
